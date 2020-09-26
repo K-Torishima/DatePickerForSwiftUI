@@ -14,10 +14,10 @@ struct ContentView: View {
             Text("タイトル")
                 .font(.title)
             //モードを切り替えたい場合
-            DatePicker("タイトル", selection: $selectionDate, displayedComponents: .date)
-                .datePickerStyle(CompactDatePickerStyle())
+            DatePicker("タイトル", selection: $selectionDate, displayedComponents: .hourAndMinute)
+                .datePickerStyle(GraphicalDatePickerStyle())
                 .labelsHidden()
-            
+                .frame()
         }
     }
 }
